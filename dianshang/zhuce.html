@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/zhuce.css">
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?q9so3g');
+            src: url('fonts/icomoon.eot?q9so3g#iefix') format('embedded-opentype'),
+            url('fonts/icomoon.ttf?q9so3g') format('truetype'),
+            url('fonts/icomoon.woff?q9so3g') format('woff'),
+            url('fonts/icomoon.svg?q9so3g#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="apple-nav">
+        <ul>
+            <li class="apple-nav-first">
+                <a href="" class="ziti1"></a>
+            </li>
+            <li>
+                <a href="">Mac</a>
+            </li>
+            <li>
+                <a href="">ipad</a>
+            </li>
+            <li>
+                <a href="">iphone</a>
+            </li>
+            <li>
+                <a href="">Watch</a>
+            </li>
+            <li>
+                <a href="">Music</a>
+            </li>
+            <li>
+                <a href="">技术支持</a>
+            </li>
+            <li>
+                <a href="" class="ziti1"></a>
+            </li>
+            <li class="apple-nav-last ziti1" id="last"></li>
+        </ul>
+        <div class="apple-table-box" id="table">
+            <table class="apple-list table table-hover">
+                <thead>
+                    <tr>
+                        <th>你的购物袋是空的</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="images/01.png" alt="">
+                            <span>购物袋</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/02.png" alt="">
+                            <span>收藏</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/03.png" alt="">
+                            <span>订单</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/04.png" alt="">
+                            <span>账户</span>
+                    </tr>
+                    </td>
+                    <tr>
+                        <td class="apple-table-last">
+                            <img src="images/05.png" alt="">
+                            <span>登录</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </nav>
+    <header id="zhuce-head">
+        <h2>Apple ID</h2>
+        <div class="zhuce-span">
+            <span>
+                <a href="">登录</a>
+            </span>
+            <span>创建您的 Apple ID</span>
+            <span>
+                <a href="">常见问题解答</a>
+            </span>
+        </div>
+    </header>
+    <div id="nav-img">
+        <h1>创建您的 Apple ID</h1>
+    </div>
+    <section id="zhuce-section">
+        <form action="post" id="zhuce-form" onsubmit="return false" autocomplete="off">
+            <fieldset class="form-fieldset">
+                <h2>只需一个 Apple ID，您即可访问 Apple 所有内容。
+                    <br> 已有 Apple ID？
+                    <a href="">在此查找&gt;</a>
+                </h2>
+                <div class="form-input-first">
+                    <input type="text" placeholder="姓氏" class="form-control">
+                    <input type="text" placeholder="名字" class="form-control">
+                </div>
+            </fieldset>
+            <fieldset class="form-fieldset-second">
+                <h3>国家或地区</h3>
+                <select class="form-control" id="select-first">
+                    <option>中国（大陆）</option>
+                    <option>美国</option>
+                    <option>英国</option>
+                    <option>日本</option>
+                    <option>俄罗斯</option>
+                </select>
+                <input type="text" placeholder="出生日期" class="form-control">
+            </fieldset>
+            <div class="border"></div>
+            <fieldset class="form-fieldset-three">
+                <input name="username" type="text" placeholder="name@example.com" class="form-control" id="apple-id">
+                <p id="cuowu-zi">输入有效的电子邮件地址以用作您的 Apple ID。</p>
+                <h3>这将是您的新 Apple ID。</h3>
+                <input name="password" type="password" placeholder="密码" class="form-control">
+                <img src="images/mima.png" alt="" id="mima-img">
+                <input  name="password-second" type="password" placeholder="确定密码" class="form-control">
+                <p id="mima-cuo">您输入的密码不匹配</p>
+            </fieldset>
+            <div class="border"></div>
+            <div class="select-all">
+                <select class="form-control" id="select-one">
+                    <option>安全提示问题1</option>
+                    <option>安全提示问题1</option>
+                    <option>安全提示问题1</option>
+                    <option>安全提示问题1</option>
+                    <option>安全提示问题1</option>
+                </select>
+                <input type="text" placeholder="答案" class="form-control">
+            </div>
+            <div class="select-middle">
+                <select class="form-control" id="select-two">
+                    <option>安全提示问题1</option>
+                    <option>安全提示问题1</option>
+                    <option>安全提示问题1</option>
+                    <option>安全提示问题1</option>
+                    <option>安全提示问题1</option>
+                </select>
+                <input type="text" placeholder="答案" class="form-control">
+            </div>
+            <div class="select-all-last">
+                <select class="form-control" id="select-three">
+                    <option>安全提示问题1</option>
+                    <option>安全提示问题1</option>
+                    <option>安全提示问题1</option>
+                    <option>安全提示问题1</option>
+                    <option>安全提示问题1</option>
+                </select>
+                <input type="text" placeholder="答案" class="form-control">
+            </div>
+            <p>这些问题将用于验证您的身份，以及在您忘记密码时恢复您的密码。</p>
+            <div class="border"></div>
+            <div class="check-box">
+                <div class="checkbox check-first">
+                    <label>
+                        <input type="checkbox" value="option1" class="bg-primary">
+                        <h2>公告</h2>
+                        <h3>获取有关 Apple 产品、服务和软件的公告、推荐和更新。</h3>
+                    </label>
+                </div>
+                <div class="checkbox check-first">
+                    <label>
+                        <input type="checkbox" value="option1" class="bg-primary">
+                        <h2>App、音乐、电影以及更多内容</h2>
+                        <h3>获取有关 App、音乐、电影、电视、图书、播客等的最新发布、独家内容、特别
+                            <br>优惠和推荐。</h3>
+                    </label>
+                </div>
+            </div>
+            <div class="border"></div>
+            <div class="yanzhengma">
+                <div class="yan-img">
+                    <img src="images/yan.png" alt="" id="img-yan">
+                </div>
+                <div class="yan-kuang">
+                    <input type="text" placeholder="键入图中的字符" class="form-control" id="yan-zi">
+                    <br>
+                    <span class="first-span">
+                        <a href="">新代码</a>
+                    </span>
+                    <span class="second-span">
+                        <a href="">视力障碍</a>
+                    </span>
+                </div>
+            </div>
+            <div class="border"></div>
+            <div class="tijiao">
+                <img src="images/hezuo.png" alt="">
+                <h4>您的 Apple ID 信息被用于确保您能够安全登录并访问您的数据。出于安全性、支持和报</h4>
+                <h4>告的目的，Apple 会记录您的某些使用情况数据。
+                    <a href="">了解 Apple 如何保护您的隐私。</a>
+                </h4>
+                <button name="login-btn" class="btn btn-primary" id="btn">继续</button>
+            </div>
+        </form>
+    </section>
+    <footer id="apple-footer">
+
+        <div class="footerZi-two">
+            <span>更多选购方式前往：</span>
+            <a href="">App Store 零售店</a>
+            <span>,致电400-600-8800 或查找在你附近的</span>
+            <a href="">授权经销商</a>
+        </div>
+        <div class="copyright">
+            <span>copyright &copy; 2018 Apple inc.保留所有权限。</span>
+            <ul class="copyright-list">
+                <li>隐私政策</li>
+                <li>使用条款</li>
+                <li>销售政策</li>
+                <li>法律信息</li>
+                <li>网站地图</li>
+            </ul>
+            <div class="country">
+                <img src="images/country-icon-cn.png" alt="">
+                <a href="">中国(大陆)</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/common/ajax.js"></script>
+<script src="js/common/index.js"></script>
+<script src="js/register.js"></script>
+<script src="js/zhuce.js"></script>
+<script>
+    register.init('#zhuce-form');
+</script>
+
+</html>

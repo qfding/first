@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/denglu.css">
+    <style>
+            @font-face {
+                font-family: 'icomoon';
+                src: url('fonts/icomoon.eot?q9so3g');
+                src: url('fonts/icomoon.eot?q9so3g#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?q9so3g') format('truetype'),
+                url('fonts/icomoon.woff?q9so3g') format('woff'),
+                url('fonts/icomoon.svg?q9so3g#icomoon') format('svg');
+                font-weight: normal;
+                font-style: normal;
+            }
+        </style>
+</head>
+
+<body>
+    <nav id="apple-nav">
+        <ul>
+            <li class="apple-nav-first">
+                    <a href="index.html" class="ziti1"></a>
+            </li>
+            <li>
+                <a href="">Mac</a>
+            </li>
+            <li>
+                <a href="">ipad</a>
+            </li>
+            <li>
+                <a href="">iphone</a>
+            </li>
+            <li>
+                <a href="">Watch</a>
+            </li>
+            <li>
+                <a href="">Music</a>
+            </li>
+            <li>
+                <a href="">技术支持</a>
+            </li>
+            <li>
+                    <a href="" class="ziti1"></a>
+            </li>
+            <li class="apple-nav-last ziti1" id="last"></li>
+        </ul>
+        <div class="apple-table-box" id="table">
+            <table class="apple-list table table-hover">
+                <thead>
+                    <tr>
+                        <th>你的购物袋是空的</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="images/01.png" alt="">
+                            <span>购物袋</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/02.png" alt="">
+                            <span>收藏</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/03.png" alt="">
+                            <span>订单</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/04.png" alt="">
+                            <span>账户</span>
+                    </tr>
+                    </td>
+                    <tr>
+                        <td class="apple-table-last">
+                            <img src="images/05.png" alt="">
+                            <span>登录</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </nav>
+    <section id="apple-section">
+        <div class="localnav"></div>
+        <form action="" id="zhuce" autocomplete="off" onsubmit="return false">
+            <fieldset>
+                <legend align="left">请登录</legend>
+                <div class="denglu">
+                    <img src="images/tishi.png" alt="" id="img-tishi">
+                    <h2>登陆 Apple Store</h2>
+                    <div class="denglu-tishi">您的 AppleConnect 帐号或密码输入有误。</div>
+                    <input name="username" type="text" placeholder="Apple ID" class="form-control"><br>
+                    <input name="password" type="password" placeholder="密码*" class="form-control"><br>
+                    <a href="">忘了自己的 Apple ID 或密<br>码？</a><button name="login-btn" class="btn btn-primary" id="btn">登录</button>
+                </div>
+                <div class="img-middle"><img src="images/xian.png" alt=""></div>
+                <div class="denglu-zi">
+                    <h2>你可以使用自己的 Apple ID 来享用其他<br> Apple 服务，例如</h2>
+                    <ul class="denglu-ul">
+                        <li>App Store</li>
+                        <li>iTunes Store</li>
+                        <li>iPhoto 打印服务</li>
+                        <li>iCloud</li>
+                    </ul>
+                    <a href="zhuce.html">没有 Apple ID？立即创建一个。</a>
+                </div>
+                <img src="images/suo.png" alt="" id="anquan">
+            </fieldset>
+            <div class="localnav2">
+                        
+            </div>
+            <button class="btn btn-primary" id="lost">取消</button>
+            <div class="lastZi">
+                <span>如果您有问题， 欢迎随时提问。 </span><img src="images/phone.png" alt=""><span>400-666-8800</span>
+            </div>
+        </form>
+    </section>
+    <footer id="apple-footer">
+            <div class="footerZi">
+                    Apple Store 在线商店采用符合业界标准的加密技术对您提交的信息进行保密。进一步了解我们的安全政策。
+            </div>
+            <div class="footerZi-two">
+                    <span>更多选购方式前往：</span><a href="">App Store 零售店</a><span>,致电400-600-8800</span><a href="">授权经销商</a>    
+                 </div>
+        <div class="copyright">
+            <span>copyright &copy; 2018 Apple inc.保留所有权限。</span>
+            <ul class="copyright-list">
+                <li>隐私政策</li>
+                <li>使用条款</li>
+                <li>销售政策</li>
+                <li>法律信息</li>
+                <li>网站地图</li>
+            </ul>
+            <div class="country">
+                <img src="images/country-icon-cn.png" alt=""><a href="">中国</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/common/index.js"></script>
+<script src="js/common/ajax.js"></script>
+<script src="js/login.js"></script>
+<script>
+        login.init('#zhuce');
+    </script>
+</html>
