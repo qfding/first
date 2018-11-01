@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.ulbox>li {
+				width: 100px;
+				height: 100px;
+				background-color: #ccc;
+				margin: 4px;
+				display: inline-block;
+			}
+			
+			.ulbox>li.active {
+				background-color: yellow;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul class="ulbox box1">
+			<li class="active box"></li>
+			<li class="box"></li>
+			<li class="box"></li>
+			<li class="box"></li>
+		</ul>
+		<ul class="ulbox box2">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$('.box1').find('li').on('click',function(){
+		$(this).addClass('active').siblings().removeClass();
+	});
+	
+	$('.box2').find('li').on('mouseenter',function(){
+		$('.box2').children('li').addClass('active');
+		$(this).nextAll().removeClass();
+	});
+	
+</script>

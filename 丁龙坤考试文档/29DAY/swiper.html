@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>swiper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <style>
+        body {
+            background-color: #ccc;
+        }
+
+        .swiper1 {
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #fff;
+            width: 300px;
+            height: 446px;
+            position: relative;
+        }
+
+        .ul-box {
+            position: absolute;
+            bottom: 0px;
+        }
+
+        .ul-box span {
+            width: 10px;
+            height: 10px;
+        }
+
+        .btn-left {
+            position: absolute;
+            right: 0px;
+            top: 30px;
+            z-index: 10;
+        }
+
+        .btn-right {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/iphone-xs-select-2018-1.jfif" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/iphone-xs-select-2018-2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/iphone-xs-select-2018-3.png" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination ul-box"></div>
+        <div class="btn-left">
+            <p>左</p>
+        </div>
+        <!--左箭头-->
+        <div class="btn-right">
+            <p>右</p>
+        </div>
+        <!--右箭头-->
+    </div>
+
+
+
+    <script src="jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper1', {
+            autoplay: true,//可选选项，自动滑动
+            loop: true,//环路
+            effect: "fade",
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+                // hideOnClick:true
+                // dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.btn-right',
+                prevEl: '.btn-left',
+            },
+            on: {
+                init: function () {
+                    //Swiper初始化了
+                    alert('当前的slide序号是' + this.activeIndex);
+                    // this.emit('transitionEnd');//在初始化时触发一次transitionEnd事件
+                },
+            },
+
+        })
+    </script>
+</body>
+
+</html>

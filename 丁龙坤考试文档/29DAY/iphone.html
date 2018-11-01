@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iphonex</title>
+    <style>
+        *{
+            margin:0 auto;
+        }
+        div{
+            width: 500px;
+            height: 900px;
+            position: relative;
+            margin:0 auto;
+        }
+        div img{
+            position: absolute;
+        }
+        .img2{
+            left:30px;
+        }
+        .img3{
+            left:70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <img src="images/iphone-xs-select-2018-1.jfif" alt="" class="img1">
+        <img src="images/iphone-xs-select-2018-2.png" alt="" class="img2">
+        <img src="images/iphone-xs-select-2018-3.png" alt="" class="img3">
+    </div>
+
+
+    <script src="jquery.js"></script>
+    <script>
+        $(".box1").on("mouseenter","img",function(){
+            console.log(1);
+            $(".img2").stop().animate({
+                left:50
+            },1000);
+            $(".img3").stop().animate({
+                left:110
+            },1000)
+        })
+        $(".box1").on("mouseleave","img",function(){
+            console.log(1);
+            $(".img2").stop().animate({
+                left:30
+            },1000);
+            $(".img3").stop().animate({
+                left:70
+            },1000)
+        })
+    
+    </script>
+</body>
+</html>
